@@ -7,6 +7,7 @@
     <modules>
         <module>springboot-rabbitmq</module>
         <module>springboot-redis</module>
+        <module>springboot-mybatisplus</module>
     </modules>
 
     <parent>
@@ -26,6 +27,7 @@
         <java.version>1.8</java.version>
         <project.build.sourceencoding>UTF-8</project.build.sourceencoding>
         <project.reporting.outputencoding>UTF-8</project.reporting.outputencoding>
+        <myabtisplus.version>3.12</myabtisplus.version>
     </properties>
 
     <dependencies>
@@ -38,7 +40,11 @@
 
     <dependencyManagement>
         <dependencies>
-
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${myabtisplus.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
